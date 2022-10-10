@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Cart = ({product,handleAddToCart}) => {
-    const{logo,id,name,total}=product
+    const{logo,name,total}=product
 
     return (
         <div className='bg-gray-100 p-6 rounded shadow-lg'>

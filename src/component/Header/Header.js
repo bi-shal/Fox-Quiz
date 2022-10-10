@@ -20,10 +20,10 @@ const Header = () => {
             <Link to='/home' rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-violet-400 dark:border-violet-400">Home</Link>
 			</li>
 			<li className="flex">
-				<Link to='/home' rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">About</Link>
+				<Link to='/statics' rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Statics</Link>
 			</li>
 			<li className="flex">
-            <Link to='/home' rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Topics</Link>
+            <Link to='/statics'  rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Topics</Link>
 				
 			</li>
 			<li className="flex">

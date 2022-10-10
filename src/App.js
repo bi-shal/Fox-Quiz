@@ -2,6 +2,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './component/Blog/Blog';
+import Statics from './component/Chart/Statics';
 import Error from './component/Error/Error';
 import Home from './component/Home/Home';
 import Main from './Layout/Main';
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
     children:[
       {path:'/', element:<Home></Home>},
       {path:'/home', element:<Home></Home>},
-      {path:'/topics', element:<Home></Home>},
+      {path:'/statics', element:<Statics></Statics>},
       {path:'/blog', element:<Blog></Blog>}
     ]
   },
