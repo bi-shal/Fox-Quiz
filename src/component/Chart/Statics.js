@@ -1,14 +1,10 @@
 import React, { useContext } from 'react';
-import { useLoaderData } from 'react-router-dom';
-// import { Line, LineChart } from 'recharts';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts';
 import { ProductContext } from '../../Layout/Main';
 
 
 const Statics = () => {
     const products = useContext(ProductContext)
-    // const products = useLoaderData()
-    // console.log(products);
     
     return (
         <div>
