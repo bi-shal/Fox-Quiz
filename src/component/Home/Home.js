@@ -1,14 +1,19 @@
 import React, { useContext } from 'react';
 import { ProductContext } from '../../Layout/Main';
 import Cart from '../Cart/Cart';
-// import { loaderData } from '../../Loader/Loader';
+
 
 const Home = () => {
     const products = useContext(ProductContext)
-    console.log(products); 
+    // console.log(products); 
+    // const products = useLoaderData()
+    // console.log(products)
 
     const handleAddToCart = (btnProducts) => {
-        console.log(btnProducts)
+        // console.log(btnProducts)
+        // Cartdtail()
+
+        
     }
 
     return (
