@@ -5,16 +5,10 @@ import Cart from '../Cart/Cart';
 
 const Home = () => {
     const products = useContext(ProductContext)
-    // console.log(products); 
-    // const products = useLoaderData()
-    // console.log(products)
+   
 
-    const handleAddToCart = (btnProducts) => {
-        // console.log(btnProducts)
-        // Cartdtail()
-
-        
-    }
+    // const handleAddToCart = (btnProducts) => {
+    // }
 
     return (
         <div>
