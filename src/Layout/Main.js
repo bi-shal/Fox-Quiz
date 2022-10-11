@@ -16,15 +16,5 @@ const Main = () => {
     );
 };
 
-// const Main = () => {
-//     // const products = useLoaderData()
-//     // console.log(products)
-//     return (
-//         <div>
-//            <Header></Header>
-//             <Outlet></Outlet>
-//         </div>
-//     );
-// };
 
 export default Main;
