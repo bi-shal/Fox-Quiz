@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Bars3Icon,XMarkIcon } from '@heroicons/react/24/solid'
+
 
 const Header = () => {
 
-    
+    const [open,setOpen] = useState(false);
 
     return (
         <div>
@@ -12,9 +14,9 @@ const Header = () => {
 		<Link to='/' rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2 text-green-600 text-4xl font-bold">
 			Fox Quiz
 		</Link>
-		<ul className="items-stretch hidden space-x-3 md:flex">
+		<ul className={`md:flex   justify-center p-6 md:static  absolute duration-500 ease-in    ${open ? 'top-20 mr-[-50px]':'top-[-190px]'}`}>
 			<li className="flex">
-            <Link to='/home' rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-violet-400 dark:border-violet-400">Home</Link>
+            <Link to='/home' rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-violet-800 dark:border-violet-800">Home</Link>
 			</li>
 			<li className="flex">
 				<Link to='/statics' rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Statics</Link>
@@ -28,10 +30,9 @@ const Header = () => {
 				
 			</li>
 		</ul>
-		<button className="flex justify-end p-4 md:hidden">
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-				<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-			</svg>
+		<button onClick={() => setOpen(!open)} className="h-6 w-6 md:hidden">
+			{open ? <XMarkIcon /> : <Bars3Icon /> }
+	
 		</button>
 	</div>
 </header>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Blog = () => {
+    
     return (
         <div className='grid grid-cols-1 m-5 '>
             <div className='bg-sky-800 m-5 p-5'>
