@@ -1,10 +1,14 @@
 #Live Site Link :-
-#Repository Name :-
-#Description :- There is three feature.
+#Repository Name:- programming-hero-web-course2/b6-quiz-crackerz-bi-shal 
+
+#Description :- There are three feature.
 1. This website fully responsive,
 2. There using linechart and define property, 
 3. Using Dynamic Router and minimalistic UI,
-4.
+4. using Tailwind css frameWork Which is better thhan other framework.
+5. Useing Tostify component
+6. useing HeroIcon and that is really awesome.
+
 
 
 

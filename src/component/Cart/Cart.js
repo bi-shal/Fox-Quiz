@@ -16,7 +16,7 @@ const Cart = ({product,handleAddToCart}) => {
         <p className='text-gray-700 font-bold'> Question: {total}</p>
         <Link to={`/home/${id}`}>
         <button
-          onClick={() => handleAddToCart(product.id)}
+         
           type='button'
           className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-cyan-200 text-gray-800 hover:bg-cyan-400'
         >

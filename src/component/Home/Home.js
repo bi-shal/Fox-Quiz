@@ -7,16 +7,13 @@ const Home = () => {
     const products = useContext(ProductContext)
    
 
-    // const handleAddToCart = (btnProducts) => {
-    // }
-
     return (
         <div>
             <section>
 	<div className="dark:bg-violet-400">
 		<div className="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 dark:text-gray-900">
-			<h1 className="text-5xl font-bold leading-none sm:text-6xl xl:max-w-3xl dark:text-gray-900">Provident blanditiis cum exercitationem</h1>
-			<p className="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl dark:text-gray-900">Cupiditate minima voluptate temporibus quia? Architecto beatae esse ab amet vero eaque explicabo!</p>
+			<h1 className="text-5xl font-bold leading-none sm:text-6xl xl:max-w-3xl dark:text-gray-900">Do Someting New !</h1>
+			<p className="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl dark:text-gray-900">Work hard and you can achieve anything. That’s a bit of advice that’s been repeated to us so many times that it’s sort of lost its meaning. The problem is that we already feel like we are working hard, but for many of us, it seems like we aren’t getting anywhere.!</p>
 			
 		</div>
 	</div>
@@ -31,7 +28,7 @@ const Home = () => {
             products.map(product => <Cart
                 product={product}
                 key = {product.id}
-                handleAddToCart={handleAddToCart}
+                // handleAddToCart={handleAddToCart}
             ></Cart>)
         }
 

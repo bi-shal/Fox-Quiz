@@ -9,7 +9,7 @@ const Header = () => {
         <div>
             <header className="p-4 dark:bg-gray-800 dark:text-gray-100">
 	<div className="container flex justify-between h-16 mx-auto">
-		<Link to='/' rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2 text-green-600 text-3xl">
+		<Link to='/' rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2 text-green-600 text-4xl font-bold">
 			Fox Quiz
 		</Link>
 		<ul className="items-stretch hidden space-x-3 md:flex">
@@ -19,12 +19,13 @@ const Header = () => {
 			<li className="flex">
 				<Link to='/statics' rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Statics</Link>
 			</li>
+			
+			<li className="flex">
+				<Link to='/blog' rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Blog</Link>
+			</li>
 			<li className="flex">
             <Link to='/statics'  rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Topics</Link>
 				
-			</li>
-			<li className="flex">
-				<Link to='/blog' rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Blog</Link>
 			</li>
 		</ul>
 		<button className="flex justify-end p-4 md:hidden">

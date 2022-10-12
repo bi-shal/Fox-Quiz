@@ -1,15 +1,27 @@
-import React from 'react';
-import { BeakerIcon, EyeIcon } from '@heroicons/react/24/solid'
+
+import { EyeIcon } from '@heroicons/react/24/solid'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Qanswer from '../Qanswer/Qanswer';
 
 
 const Showdata = ({allDta}) => {
-    console.log(allDta);
-    const {id,question,correctAnswer,options} = allDta
+    // console.log(allDta);
+    const {question,correctAnswer,options} = allDta
 
 const rightAns = (correctAnswer) =>{
     toast(correctAnswer);
+}
+
+const clickMe = (opt) =>{
+   
+    if(correctAnswer === opt){
+        toast('its true')
+
+    }else{
+        toast('its false')
+    }
+    
 }
 
     return (
@@ -20,16 +32,19 @@ const rightAns = (correctAnswer) =>{
            <EyeIcon className="h-6 w-6 text-blue-500"/>
            <ToastContainer />
            </button>
-				<div className=" ">{question}</div>
-                <div className=''> {options}</div>
+				<h1 className=" text-2xl pb-5">{question}</h1>
+                <div className="grid gap-10 my-2 lg:grid-cols-2">
+                    {
+                        options.map((opt,index) => <Qanswer
+                            index={index}
+                            opt={opt}
+                            clickMe={clickMe}
+                        ></Qanswer>)
+                    }
+                </div>
 
 			</div>
 
-
-        // <div className='bg-green-400 m-20'>
-        //     <h1>{question}</h1>
-        //     <h1 className='bg-amber-300 m-2 '>{options}</h1>
-        // </div>
     );
 };
 
